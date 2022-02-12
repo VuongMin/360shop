@@ -1,0 +1,19 @@
+.cart__page{
+    font-size: $fs14;
+    &__del{
+        &:hover{
+          svg{
+            transform: rotate(10deg);
+            transition: .3s;
+          }
+        }
+    }
+    th{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    td{
+        text-transform: capitalize;
+        line-height: 55px;
+    }
+}

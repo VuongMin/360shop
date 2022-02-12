@@ -1,0 +1,28 @@
+.search__component{
+    position: relative;
+    .list-group{
+        position: absolute;
+     
+        left: 0;
+        width: 100%;
+        z-index: 9;
+        top: 100%;
+    }
+    input{
+        height: 55px;
+        background-color: $clbg;
+        font-size: $fs15;
+        &::placeholder{
+            font-size: $fs15;
+        }
+   
+    }
+    a{
+        text-decoration: none;
+        color: $clblack;
+        &:hover{
+            color:$clred;
+            transition: .3s;
+        }
+    }
+}

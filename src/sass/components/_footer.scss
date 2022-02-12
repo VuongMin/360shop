@@ -1,0 +1,20 @@
+.footer{
+    background-color: $clbg;
+    &__top{
+        padding:10px 0;
+        font-size: $fs14;
+        text-transform: capitalize;
+       
+        input{
+            height: 40px;
+        }
+        button{
+            border: none;
+            width: 100%;
+            &:hover{
+                color: $clred;
+                transition: .3s;
+            }
+        }
+    }
+}

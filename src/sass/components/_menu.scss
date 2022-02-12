@@ -1,0 +1,70 @@
+.list__menu{
+    @include flexbox(center,center);
+    position: relative;
+    &__item{
+        .sub__list {
+            position: absolute;
+            background: #fff;
+            z-index: 9;
+            width: 100%;
+            left: 0;
+            top: 100%;
+            display: none;
+            padding: 0 20px;
+        }
+        &:hover{
+            .sub__list{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+      .sub__list__small{
+        display: flex;
+        flex-direction: column;
+        a{
+            color: gray;
+        }
+      }
+    }
+    a{
+        position: relative;
+        font-size: $fs15;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px ;
+        text-transform: capitalize;
+        &:hover{
+            color: $clred;
+            transition: .3s;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0%;
+            background-color: $clred;
+        }
+        &:hover::after{
+            transition: .4s ease-in-out;
+            transition-delay: .2s;
+            width: 100%;
+        }
+    }
+    @media (max-width:768px) {
+        .sub__list{
+            position: unset;
+            display: flex;
+             flex-direction: column;
+             padding: 0;
+             .sub__list__item{
+                 display: none;
+             }
+             .sub__list__small{
+                  display: none;
+             }
+        }
+    }
+   
+}

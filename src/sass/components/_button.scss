@@ -1,0 +1,25 @@
+.button{
+    @include flexbox(center,center);
+    padding: 10px 15px;
+    color: #fff;
+    background-color: $clblack;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid $clblack;
+    svg{
+        margin: 0 5px;
+    }
+    &:hover{
+        background-color: $clbg;
+        transition: .3s;
+        border: 2px solid $clblack;
+        color: $clblack;
+    }
+}
+a{
+    color: black;
+    text-decoration: none;
+}
